@@ -9,6 +9,12 @@ This project is an inspiration from gautamkrishnar's "Nothing Private" (https://
 
 ## Running locally
 
-run: docker-compose up --build
+run: 
+```
+./mvnw install
+docker-compose up --build
+```
+
+navigate to http://localhost:8082/ in browser
 
 ![alt-text](https://github.com/adarshjos/Incognito-Myth/blob/master/vid.gif)

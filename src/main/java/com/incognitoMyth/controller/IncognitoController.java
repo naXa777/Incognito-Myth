@@ -26,7 +26,7 @@ public class IncognitoController {
 
     @SubscribeMapping("/fp/initFP/{fingerPrint}")
     public BrowserTabDTO initFP(@DestinationVariable("fingerPrint") String transferData) throws Exception {
-        log.log(Level.INFO,"FingerPrint Received':::"+transferData.toString());
+        log.log(Level.INFO,"FingerPrint Received':::"+transferData);
         JSONObject dataObj=new JSONObject(transferData);
         return incognitoService.bootStrap(dataObj);
     }
